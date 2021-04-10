@@ -3,10 +3,8 @@ let form = document.querySelector('#addForm');
 let newEmp = document.querySelector('#employees');
 // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
 let count = document.querySelector('#empCount');
-counting = 0;
-for (var i = 0; i < employees.length; i++) {
-    counting++;
-}
+let counting = document.querySelector('#employees');
+counting.getElementsByTagName('tr').length;
 count.appendChild(document.createTextNode("(" + counting + ")"));
 
 
