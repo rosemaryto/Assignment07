@@ -2,7 +2,12 @@
 let form = document.querySelector('#addForm');
 let newEmp = document.querySelector('#employees');
 // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
-let count = 0;
+let count = document.querySelector('#empCount');
+counting = 0;
+for (var i = 0; i < employees.length; i++) {
+    counting++;
+}
+count.appendChild(document.createTextNode("(" + counting + ")"));
 
 
 
@@ -48,7 +53,7 @@ form.addEventListener('submit', (e) => {
     document.querySelector('#id').focus();
 
     // INCREMENENT THE NUMBER OF EMPLOYEES IN THE TABLE
-  
+   
 
 });
 
